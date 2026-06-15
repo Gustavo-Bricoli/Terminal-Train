@@ -1,29 +1,25 @@
-from npcAleatorio import npc
+from npcAleatorio import criar_npcs
+from trem import Trem
+from estacao import estacoes
 
-#criacao dos objetos
-a = Estacao("A")
-b = Estacao("B")
-c = Estacao("C")
-d = Estacao("D")
-estacoes = [a,b,c,d]
-trem = Trem(a, estacoes)
+# Criar NPCs e adicioná-los às filas
+npcs = criar_npcs(estacoes)
 
-#adicionando os npcs as filas das estacoes
-'''a.fila.append(joao)
-b.fila.append(maria)
-c.fila.append(clovis)
-d.fila.append(fulano)'''
+# Criar o trem
+trem = Trem(estacoes)
 
-#testando
+# Testando as filas das estações
+print("=== Filas iniciais ===")
 for estacao in estacoes:
-    print(estacao.nome, estacao.fila)
+    print(f"Estação {estacao.nome}: {estacao.fila}")
 
-#faz o trem dar 2 voltas
+# Faz o trem dar 2 voltas
+print("\n=== Simulação ===")
 for _ in range(8):
-    print(f"\nEstação {trem.estacao_atual()}")
+    print(f"\nEstação {trem.estacao_atual().nome}")
     trem.processar_estacao()
-    print("Passageiros:", trem.passageiros)
+    print("Passageiros no trem:", trem.passageiros)
     trem.proxima_estacao()
 
-#testando se funfou
+print(f"\n=== Final ===")
 print(f"Passageiros no trem: {trem.passageiros}")
