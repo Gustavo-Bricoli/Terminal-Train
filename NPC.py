@@ -1,3 +1,4 @@
+from listaNomesNPC import nomes, sobrenomes
 import random
 
 class NPC:
@@ -10,24 +11,16 @@ class NPC:
         return self.nome
 
 def criar_npcs(estacoes):
-    nomes = [
-        "Joao",
-        "Maria",
-        "Clovis",
-        "Ana",
-        "Pedro",
-        "Julia",
-        "Carlos"
-    ]
-    
     npcs = []
     for i in range(10):
         nome = random.choice(nomes)
+        sobrenome = random.choice(sobrenomes)
+        nome_completo = f"{nome} {sobrenome}"
         origem = random.choice(estacoes)
         destino = random.choice(estacoes)
         while destino == origem:
             destino = random.choice(estacoes)
-        npc = NPC(nome, destino, origem)
+        npc = NPC(nome_completo, destino, origem)
         origem.fila.append(npc)
         npcs.append(npc)
     return npcs

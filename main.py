@@ -1,6 +1,7 @@
-from npcAleatorio import criar_npcs
+from NPC import criar_npcs
 from trem import Trem
 from estacao import estacoes
+from terminalAnimation import terminalAnimation
 
 # Criar NPCs e adicioná-los às filas
 npcs = criar_npcs(estacoes)
@@ -13,13 +14,16 @@ print("=== Filas iniciais ===")
 for estacao in estacoes:
     print(f"Estação {estacao.nome}: {estacao.fila}")
 
-# Faz o trem dar 2 voltas
-print("\n=== Simulação ===")
-for _ in range(8):
-    print(f"\nEstação {trem.estacao_atual().nome}")
-    trem.processar_estacao()
-    print("Passageiros no trem:", trem.passageiros)
-    trem.proxima_estacao()
+answer = input("Começar o jogo? (y/n):\n")
+
+while answer == 'y':
+    for _ in range(1):
+        terminalAnimation()
+        print(f"\nEstação {trem.estacao_atual().nome}")
+        trem.processar_estacao()
+        print("Passageiros no trem:", trem.passageiros)
+        trem.proxima_estacao()
+        answer = input("Ir para a próxima estação? (y/n)\n")
 
 print(f"\n=== Final ===")
 print(f"Passageiros no trem: {trem.passageiros}")

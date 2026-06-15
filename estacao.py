@@ -1,5 +1,3 @@
-
-
 class Estacao:
     def __init__(self, nome):
         self.nome = nome
@@ -7,6 +5,9 @@ class Estacao:
     def __repr__(self):
         return self.nome 
     
+def criarEstacao(nome):
+    pass
+
 a = Estacao("A")
 b = Estacao("B")
 c = Estacao("C")
