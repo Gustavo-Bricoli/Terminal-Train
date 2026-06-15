@@ -1,3 +1,5 @@
+from npcAleatorio import npc
+
 #classes
 class Estacao:
     def __init__(self, nome):
@@ -5,16 +7,6 @@ class Estacao:
         self.fila = []
     def __repr__(self):
         return self.nome    
-
-class NPC:
-    def __init__(self, nome, destino):
-        self.nome = nome
-        self.destino = destino
-
-    #usado para mostrar o nome do NPC no print(estacao.fila)
-    
-    def __repr__(self):
-        return self.nome
     
 class Trem:
     def __init__(self, estacao_atual, estacoes):
@@ -52,16 +44,12 @@ c = Estacao("C")
 d = Estacao("D")
 estacoes = [a,b,c,d]
 trem = Trem(a, estacoes)
-joao = NPC("Joao", d)
-maria = NPC("Maria", a)
-clovis = NPC("Clovis", b)
-fulano = NPC("Fulano", c)
 
 #adicionando os npcs as filas das estacoes
-a.fila.append(joao)
+'''a.fila.append(joao)
 b.fila.append(maria)
 c.fila.append(clovis)
-d.fila.append(fulano)
+d.fila.append(fulano)'''
 
 #testando
 for estacao in estacoes:
