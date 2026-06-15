@@ -10,12 +10,13 @@ class NPC:
     def __repr__(self):
         return self.nome
 
-def criar_npcs(estacoes):
+def gerarNome():
+    return f"{random.choice(nomes)} {random.choice(sobrenomes)}"
+
+def criarNpcs(estacoes):
     npcs = []
     for i in range(10):
-        nome = random.choice(nomes)
-        sobrenome = random.choice(sobrenomes)
-        nome_completo = f"{nome} {sobrenome}"
+        nome_completo = gerarNome()
         origem = random.choice(estacoes)
         destino = random.choice(estacoes)
         while destino == origem:

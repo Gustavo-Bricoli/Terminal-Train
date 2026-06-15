@@ -1,10 +1,10 @@
-from Classes.NPC import criar_npcs
+from Classes.NPC import criarNpcs
 from Classes.trem import Trem
 from Classes.estacao import estacoes
 from Animacões.terminalAnimation import terminalAnimation
 
 # Criar NPCs e adicioná-los às filas
-npcs = criar_npcs(estacoes)
+npcs = criarNpcs(estacoes)
 
 # Criar o trem
 trem = Trem(estacoes)
