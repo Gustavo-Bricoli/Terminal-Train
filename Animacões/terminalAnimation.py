@@ -7,6 +7,7 @@ upper_ani = f'\n                     [{estacoes[0]}]               [{estacoes[1]
 base_ani = f'☰☰☰{train_doors[0]}☰☰☰==================================================================================\n'
 
 base_animation = list(base_ani)
+
 '''for i in range(9):
     #print(list(base_ani))
     
@@ -33,11 +34,6 @@ print(''.join(base_animation))
 print('\n\n\n\n\n')
 
 sleep(0.2)'''
-
-'''
-Precisa de uma funcao proximaEstacao() e uma voltarInicio(). 
-Ai consigo arrumar pra ele nao printar mais a estacao A quando ele volta pro comeco
-'''
 
 
 def terminalAnimation():
