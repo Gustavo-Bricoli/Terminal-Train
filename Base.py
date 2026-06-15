@@ -12,9 +12,10 @@ class NPC:
         self.destino = destino
 
     #usado para mostrar o nome do NPC no print(estacao.fila)
+    
     def __repr__(self):
         return self.nome
-
+    
 class Trem:
     def __init__(self, estacao_atual, estacoes):
         self.estacoes = estacoes
@@ -24,13 +25,17 @@ class Trem:
     def embarcar(self, npc):
         self.passageiros.append(npc)
     def desembarcar(self, npc):
-        if npc.destino == self.estacao_atual:
+        #for passageiro in self.passageiros[:]:
+        if npc.destino == self.estacao_atual():
             self.passageiros.remove(npc)
+            print(f"{npc.nome} desembarcou em {self.estacao_atual().nome}")
     def proxima_estacao(self):
         self.indice_atual = (self.indice_atual + 1) % len(self.estacoes)
 
     def processar_estacao(self):
         estacao = self.estacao_atual()
+        for passageiro in self.passageiros[:]:
+            self.desembarcar(passageiro)
         while len(estacao.fila) > 0:
             npc = estacao.fila.pop(0)
             self.embarcar(npc)
@@ -48,8 +53,8 @@ d = Estacao("D")
 estacoes = [a,b,c,d]
 trem = Trem(a, estacoes)
 joao = NPC("Joao", d)
-maria = NPC("Maria", b)
-clovis = NPC("Clovis", a)
+maria = NPC("Maria", a)
+clovis = NPC("Clovis", b)
 fulano = NPC("Fulano", c)
 
 #adicionando os npcs as filas das estacoes
@@ -63,7 +68,7 @@ for estacao in estacoes:
     print(estacao.nome, estacao.fila)
 
 #faz o trem dar 2 voltas
-for _ in range(4):
+for _ in range(8):
     print(f"\nEstação {trem.estacao_atual()}")
     trem.processar_estacao()
     print("Passageiros:", trem.passageiros)
