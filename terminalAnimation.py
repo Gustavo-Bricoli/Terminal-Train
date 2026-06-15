@@ -1,4 +1,4 @@
-from estacao import estacoes
+from Classes.estacao import estacoes
 from time import sleep
 
 train_doors = ['][','[]']
