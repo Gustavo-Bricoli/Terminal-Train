@@ -61,9 +61,3 @@ for j in range(5):
         print('\n\n\n\n\n')
 
         sleep(0.2)
-
-
-    
-
-#print(upper_ani)
-#print(base_ani)
