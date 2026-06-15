@@ -15,7 +15,7 @@ def gerarNome():
 
 def criarNpcs(estacoes):
     npcs = []
-    for i in range(10):
+    for i in range(1000):
         nome_completo = gerarNome()
         origem = random.choice(estacoes)
         destino = random.choice(estacoes)

@@ -28,7 +28,6 @@ while answer == 'y':
         answer = input("Ir para a próxima estação? (y/n):\n")
     else:
         terminalAnimation()
-        answer = input("Ir para próxima estação? (y/n):\n")
         contador = 0
     
 
