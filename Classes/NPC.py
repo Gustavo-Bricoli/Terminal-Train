@@ -8,7 +8,7 @@ class NPC:
         self.origem = origem
 
     def __repr__(self):
-        return self.nome
+        return f"{self.nome} ({self.origem.nome}->{self.destino.nome})"
 
 def gerarNome():
     return f"{random.choice(nomes)} {random.choice(sobrenomes)}"
