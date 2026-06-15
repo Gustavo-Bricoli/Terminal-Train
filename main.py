@@ -14,16 +14,15 @@ print("=== Filas iniciais ===")
 for estacao in estacoes:
     print(f"Estação {estacao.nome}: {estacao.fila}")
 
-answer = input("Começar o jogo? (y/n):\n")
 
+answer = input("Começar o jogo? (y/n):\n")
 while answer == 'y':
-    for _ in range(1):
-        terminalAnimation()
-        print(f"\nEstação {trem.estacao_atual().nome}")
-        trem.processar_estacao()
-        print("Passageiros no trem:", trem.passageiros)
-        trem.proxima_estacao()
-        answer = input("Ir para a próxima estação? (y/n)\n")
+    terminalAnimation()
+    print(f"\nEstação {trem.estacao_atual().nome}")
+    trem.processar_estacao()
+    print("Passageiros no trem:", trem.passageiros)
+    trem.proxima_estacao()
+    answer = input("Ir para a próxima estação? (y/n)\n")
 
 print(f"\n=== Final ===")
 print(f"Passageiros no trem: {trem.passageiros}")
