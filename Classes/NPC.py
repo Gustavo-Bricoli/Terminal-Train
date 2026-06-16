@@ -1,4 +1,4 @@
-from listaNomesNPC import nomes, sobrenomes
+from Classes.NPC_names.listaNomesNPC import nomes, sobrenomes # esse import é curioso, porque a pasta que o arquivo considera para dar import é aquela do arquivo aberto inicialmente, ou seja, o main.py na root. Por isso o Classes de novo
 import random
 
 class NPC:
