@@ -6,4 +6,3 @@ class Jumpscare:
         player.audio_set_volume(100)
         resultado = player.play()
         return resultado
-        #time.sleep(10)
