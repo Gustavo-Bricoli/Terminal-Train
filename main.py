@@ -1,13 +1,24 @@
 from Classes.NPC import criarNpcs
 from Classes.trem import Trem
 from Classes.estacao import estacoes
+from Sons.scream import Jumpscare
+from Sons.run import Corrida
 from Animacões.terminalAnimation import terminalAnimation
+import time
 
 # Criar NPCs e adicioná-los às filas
 npcs = criarNpcs(estacoes, 10)
 
 # Criar o trem
 trem = Trem(estacoes)
+
+# teste corrida foxy
+Corrida.tocar()
+time.sleep(2)
+
+# teste jumpscare som
+Jumpscare.tocar()
+time.sleep(2)
 
 # Testando as filas das estações
 print("=== Filas iniciais ===")

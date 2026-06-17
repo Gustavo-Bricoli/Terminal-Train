@@ -1,10 +1,9 @@
 import vlc
-import time
 
-player = vlc.MediaPlayer("Sons/foxyrun.mp3")
-
-resultado = player.play()
-
-print("Resultado:", resultado)
-
-time.sleep(10)
+class Corrida:
+    def tocar():
+        player = vlc.MediaPlayer("Sons/mp3/foxyrun.mp3")
+        player.audio_set_volume(100)
+        resultado = player.play()
+        return resultado
+        #time.sleep(10)
