@@ -13,9 +13,9 @@ class NPC:
 def gerarNome():
     return f"{random.choice(nomes)} {random.choice(sobrenomes)}"
 
-def criarNpcs(estacoes):
+def criarNpcs(estacoes, quantidade):
     npcs = []
-    for i in range(1000):
+    for i in range(quantidade):
         nome_completo = gerarNome()
         origem = random.choice(estacoes)
         destino = random.choice(estacoes)

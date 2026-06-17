@@ -4,7 +4,7 @@ from Classes.estacao import estacoes
 from Animacões.terminalAnimation import terminalAnimation
 
 # Criar NPCs e adicioná-los às filas
-npcs = criarNpcs(estacoes)
+npcs = criarNpcs(estacoes, 10)
 
 # Criar o trem
 trem = Trem(estacoes)
@@ -28,6 +28,7 @@ while answer == 'y':
         answer = input("Ir para a próxima estação? (y/n):\n")
     else:
         terminalAnimation()
+        npcs = criarNpcs(estacoes, 10)
         contador = 0
     
 
