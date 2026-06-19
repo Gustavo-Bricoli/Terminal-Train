@@ -3,8 +3,7 @@ nivel de importancia (alto para baixo): !, &, *
 mecanica pro jogo!
 repensar animacaoTerminal!
 fazer outro trem!
-.exe! Gustavo
 musica de fundo*
 cutscene com o trem muito bonito*
 mexer readme*
-
+mudar estrutura das pastas adicionando /Sistemas para guardar funcoes de funcionamento que nao sao necessariamente classes. exemplo: gerado de nome *
