@@ -1,7 +1,6 @@
 <!--Use Ctrl+Shift+V to toggle .md visualization on vscode (default shortcut, Pausebreak personally)-->
 
 # **Terminal Train** _<small>the game</small>_
-<h1><b>Terminal Train</b> <i><small>the game</small></i></h1> 
 
 ``` text
                    +[Intro]+               [B]               [C]               [D]
