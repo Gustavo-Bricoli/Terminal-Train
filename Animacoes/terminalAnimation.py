@@ -5,7 +5,7 @@ from time import sleep
 train_doors = ['][','[]']
 
 upper_ani = f'\n                     [{estacoes[0]}]               [{estacoes[1]}]               [{estacoes[2]}]               [{estacoes[3]}]' # 5 espaços
-base_ani = f'☰☰☰{train_doors[0]}☰☰☰==================================================================================\n'
+base_ani = f'####{train_doors[0]}####==================================================================================\n'
 
 base_animation = list(base_ani)
 
@@ -17,7 +17,6 @@ def terminalAnimation():
 
         print(upper_ani)
         print(''.join(base_animation))
-        print('\n\n\n\n\n')
 
         sleep(0.2)
         clean()
@@ -27,13 +26,12 @@ def terminalAnimation():
         base_animation.insert(base_animation.index('[')-1, base_animation.pop(base_animation.index('[')))
         print(upper_ani)
         print(''.join(base_animation))
-        print('\n\n\n\n\n')
 
         sleep(2)
+        clean()
 
         base_animation.insert(base_animation.index(']')-1, base_animation.pop(base_animation.index(']')))
         print(upper_ani)
         print(''.join(base_animation))
-        print('\n\n\n\n\n')
 
         sleep(0.2)
