@@ -1,7 +1,7 @@
-from Classes.NPC import criarNpcs
+from Sistemas.gerarNpc import criarNpcs
 from Classes.trem import Trem
 from Classes.estacao import estacoes
-from Classes.animationCaller import AnimationCaller
+from Sistemas.animationCaller import AnimationCaller
 
 # Criar NPCs e adicioná-los às filas
 npcs = criarNpcs(estacoes, 10)

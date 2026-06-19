@@ -1,5 +1,5 @@
 from Classes.estacao import estacoes
-from Classes.terminalCleaner import clean
+from Sistemas.terminalCleaner import clean
 from time import sleep
 
 train_doors = ['][','[]']

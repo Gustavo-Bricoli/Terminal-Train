@@ -1,5 +1,5 @@
 import random
-from Animacoes import terminalAnimation
+from Animacoes.terminalAnimation import terminalAnimation
 from Animacoes.jumpscare import foxy
 from Animacoes.running_skele import yallsee
 
@@ -16,7 +16,7 @@ def unregister_animation(func):
 def list_registered():
   return dict(_registry)
 
-register_animation(terminalAnimation.terminalAnimation, weight=1.0)
+register_animation(terminalAnimation, weight=1.0)
 register_animation(foxy, weight=1.0)
 register_animation(yallsee, weight=1.0)
 

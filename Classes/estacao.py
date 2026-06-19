@@ -8,6 +8,7 @@ class Estacao:
 def criarEstacao(nome):
     pass
 
+# Criar lista das estacoes
 a = Estacao("A")
 b = Estacao("B")
 c = Estacao("C")

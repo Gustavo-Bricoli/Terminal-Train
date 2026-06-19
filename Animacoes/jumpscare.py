@@ -1,6 +1,6 @@
 from time import sleep
 import Sons.run, Sons.scream
-from Classes.terminalCleaner import clean
+from Sistemas.terminalCleaner import clean
 from utils import resource_path
 
 def foxy():

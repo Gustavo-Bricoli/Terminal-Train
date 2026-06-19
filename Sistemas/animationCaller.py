@@ -1,4 +1,4 @@
-from Classes.animationSelector import choose_animation
+from Sistemas.animationSelector import choose_animation
 class AnimationCaller:
     @staticmethod
     def callAnimation(animacao=None, *, override_weights: dict | None = None):

@@ -1,6 +1,6 @@
 from time import sleep
 import Sons.after_run
-from Classes.terminalCleaner import clean
+from Sistemas.terminalCleaner import clean
 from utils import resource_path
 
 def yallsee():
