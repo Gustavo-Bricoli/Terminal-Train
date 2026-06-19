@@ -464,6 +464,7 @@
    'C:\\Program '
    'Files\\WindowsApps\\PythonSoftwareFoundation.Python.3.12_3.12.2800.0_x64__qbz5n2kfra8p0\\Lib\\urllib\\parse.py',
    'PYMODULE'),
+  ('utils', 'D:\\JogoTrem\\utils.py', 'PYMODULE'),
   ('vlc',
    'C:\\Users\\icecu\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python312\\site-packages\\vlc.py',
    'PYMODULE'),

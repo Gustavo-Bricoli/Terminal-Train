@@ -5,7 +5,7 @@ from time import sleep
 train_doors = ['][','[]']
 
 upper_ani = f'\n                     [{estacoes[0]}]               [{estacoes[1]}]               [{estacoes[2]}]               [{estacoes[3]}]' # 5 espaços
-base_ani = f'####{train_doors[0]}####==================================================================================\n'
+base_ani = f'###{train_doors[0]}###==================================================================================\n'
 
 base_animation = list(base_ani)
 
