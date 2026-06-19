@@ -26,16 +26,16 @@ jobs:
 
       - name: Build executable with PyInstaller
         run: |
-          pyinstaller --onefile --add-data "Sons;Sons" --add-data "Animacoes;Animacoes" main.py
+          pyinstaller --onedir --add-data "Sons;Sons" --add-data "Animacoes;Animacoes" main.py
 
-      - name: Compress executable
+      - name: Zip dist folder
         run: |
-          Compress-Archive -Path dist\main.exe -DestinationPath dist\main.zip
+          Compress-Archive -Path dist\main\* -DestinationPath dist\JogoTrem-dist.zip
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: JogoTrem-exe
+          name: JogoTrem-dist
           path: |
-            dist/main.exe
-            dist/main.zip
+            dist/main
+            dist/JogoTrem-dist.zip
