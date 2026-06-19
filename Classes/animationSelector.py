@@ -1,6 +1,7 @@
 import random
 from Animacoes import terminalAnimation
 from Animacoes.jumpscare import foxy
+from Animacoes.running_skele import yallsee
 
 _registry: dict = {}
 
@@ -17,6 +18,8 @@ def list_registered():
 
 register_animation(terminalAnimation.terminalAnimation, weight=1000.0)
 register_animation(foxy, weight=1.0)
+register_animation(yallsee, weight=10000.0)
+
 
 def choose_animation(override_weights: dict | None = None):
   source = override_weights if override_weights is not None else _registry

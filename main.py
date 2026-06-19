@@ -1,8 +1,6 @@
 from Classes.NPC import criarNpcs
 from Classes.trem import Trem
 from Classes.estacao import estacoes
-from Animacoes.jumpscare import foxy
-from Animacoes.terminalAnimation import terminalAnimation
 from Classes.animationCaller import AnimationCaller
 
 # Criar NPCs e adicioná-los às filas
