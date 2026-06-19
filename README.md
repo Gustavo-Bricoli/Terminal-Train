@@ -10,14 +10,8 @@
 ### A terminal-based train management game developed in Python, created to study DSA concepts and software architecture.
 ### _*Project under development!_
 #
-```text
-      oooOOOOOOOOOOO"
-     o   ____          :::::::::::::::::: :::::::::::::::::: __|-----|__ ::::::::::::::::::
-     Y_,_|[]| --++++++ |[][][][][][][][]| |[][][][][][][][]| |  [] []  | |[][][][][][][][]|
-    {|_|_|__|;|______|;|________________|;|________________|;|_________|;|________________|;
-     /oo--OO   oo  oo   oo oo      oo oo   oo oo      oo oo   oo     oo   oo oo      oo oo
-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
-Chuckles
-```
 
-<!--## <img src="https://images.wallpaperscraft.com/image/single/train_railway_forest_169685_3840x2160.jpg" alt="I like trains" width="100%">
+<picture>
+  <source alt="Font: https://wallpaperaccess.com/full/837955.jpg" media="(prefers-color-scheme: dark)" srcset="Animacoes/img/dark_theme_train.png" width=100%>
+  <img alt="Font: https://wallpaperaccess.com/full/837955.jpg" src="Animacoes/img/light_theme_train.png" width=100%>
+</picture>
