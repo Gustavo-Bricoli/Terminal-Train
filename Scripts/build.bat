@@ -1,5 +1,7 @@
 @echo off
 
+cd /d "%~dp0\.."
+
 echo Limpando arquivos antigos...
 
 if exist build rmdir /s /q build

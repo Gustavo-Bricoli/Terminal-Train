@@ -8,7 +8,6 @@ def yallsee():
         path = resource_path(f'Animacoes/skeleton/{i}.txt')
         with open(path, 'r', encoding='utf-8') as file:
             print(file.read())
-        sleep(0.015)
-
+        sleep(0.015)        
     Sons.after_run.AlguemViu.tocar()
     clean()
