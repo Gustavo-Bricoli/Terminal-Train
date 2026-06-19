@@ -1,5 +1,6 @@
 from time import sleep
-import Sons.run, Sons.scream, os
+import Sons.run, Sons.scream
+from Classes.terminalCleaner import clean
 
 def foxy():
     Sons.run.Corrida.tocar()
@@ -11,4 +12,4 @@ def foxy():
             print(file.read())
         sleep(0.05)
     sleep(1)
-    os.system('cls' if os.name == 'nt' else 'clear')
+    clean()

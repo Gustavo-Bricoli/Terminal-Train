@@ -1,4 +1,5 @@
 from Classes.estacao import estacoes
+from Classes.terminalCleaner import clean
 from time import sleep
 
 train_doors = ['][','[]']
@@ -19,6 +20,7 @@ def terminalAnimation():
         print('\n\n\n\n\n')
 
         sleep(0.2)
+        clean()
 
     #print((base_animation.index('['))) #type: ignore
     if base_animation[0] != '☰': #mesma coisa mas nao abre a porta quando volta pro comeco

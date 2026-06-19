@@ -1,12 +1,10 @@
-import random
-from Animacoes import terminalAnimation
-from Animacoes.jumpscare import foxy
-
-animacoes = [foxy(), terminalAnimation.terminalAnimation()]
-
+from Classes.animationSelector import choose_animation
 class AnimationCaller:
-    animacao = random.choice(animacoes)
-
     @staticmethod
-    def callAnimation(animacao):
-        animacao
+    def callAnimation(animacao=None, *, override_weights: dict | None = None):
+        if animacao is not None:
+            func = animacao
+        else:
+            func = choose_animation(override_weights)
+
+        return func()
