@@ -22,7 +22,7 @@ def terminalAnimation():
         clean()
 
     #print((base_animation.index('['))) #type: ignore
-    if base_animation[0] != '☰': #mesma coisa mas nao abre a porta quando volta pro comeco
+    if base_animation[0] != '#': #mesma coisa mas nao abre a porta quando volta pro comeco
         base_animation.insert(base_animation.index('[')-1, base_animation.pop(base_animation.index('[')))
         print(upper_ani)
         print(''.join(base_animation))
