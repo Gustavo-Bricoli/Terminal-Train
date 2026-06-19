@@ -18,9 +18,7 @@
   <a target="code" href="///D:/JogoTrem/main.py" type="text/plain"><tt>main.py</tt></a>
 <span class="moduletype">Script</span>  <div class="import">
 imports:
-    <a href="#Animacoes.jumpscare">Animacoes.jumpscare</a>
- &#8226;   <a href="#Animacoes.terminalAnimation">Animacoes.terminalAnimation</a>
- &#8226;   <a href="#Classes.NPC">Classes.NPC</a>
+    <a href="#Classes.NPC">Classes.NPC</a>
  &#8226;   <a href="#Classes.animationCaller">Classes.animationCaller</a>
  &#8226;   <a href="#Classes.estacao">Classes.estacao</a>
  &#8226;   <a href="#Classes.trem">Classes.trem</a>
@@ -176,7 +174,6 @@ imports:
  &#8226;   <a href="#sre_constants">sre_constants</a>
  &#8226;   <a href="#sre_parse">sre_parse</a>
  &#8226;   <a href="#stat">stat</a>
- &#8226;   <a href="#sys">sys</a>
  &#8226;   <a href="#traceback">traceback</a>
  &#8226;   <a href="#types">types</a>
  &#8226;   <a href="#warnings">warnings</a>
@@ -220,8 +217,14 @@ imported by:
   <a name="Animacoes"></a>
   <a target="code" href="-" type="text/plain"><tt>Animacoes</tt></a>
 <span class="moduletype">NamespacePackage</span>  <div class="import">
+imports:
+    <a href="#Animacoes.terminalAnimation">Animacoes.terminalAnimation</a>
+
+  </div>
+  <div class="import">
 imported by:
     <a href="#Animacoes.jumpscare">Animacoes.jumpscare</a>
+ &#8226;   <a href="#Animacoes.running_skele">Animacoes.running_skele</a>
  &#8226;   <a href="#Animacoes.terminalAnimation">Animacoes.terminalAnimation</a>
  &#8226;   <a href="#Classes.animationSelector">Classes.animationSelector</a>
 
@@ -244,7 +247,25 @@ imports:
   <div class="import">
 imported by:
     <a href="#Classes.animationSelector">Classes.animationSelector</a>
- &#8226;   <a href="#main.py">main.py</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="Animacoes.running_skele"></a>
+  <a target="code" href="///D:/JogoTrem/Animacoes/running_skele.py" type="text/plain"><tt>Animacoes.running_skele</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#Animacoes">Animacoes</a>
+ &#8226;   <a href="#Classes.terminalCleaner">Classes.terminalCleaner</a>
+ &#8226;   <a href="#Sons.after_run">Sons.after_run</a>
+ &#8226;   <a href="#time">time</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#Classes.animationSelector">Classes.animationSelector</a>
 
   </div>
 
@@ -263,8 +284,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Classes.animationSelector">Classes.animationSelector</a>
- &#8226;   <a href="#main.py">main.py</a>
+    <a href="#Animacoes">Animacoes</a>
+ &#8226;   <a href="#Classes.animationSelector">Classes.animationSelector</a>
 
   </div>
 
@@ -361,6 +382,7 @@ imported by:
 imports:
     <a href="#Animacoes">Animacoes</a>
  &#8226;   <a href="#Animacoes.jumpscare">Animacoes.jumpscare</a>
+ &#8226;   <a href="#Animacoes.running_skele">Animacoes.running_skele</a>
  &#8226;   <a href="#Animacoes.terminalAnimation">Animacoes.terminalAnimation</a>
  &#8226;   <a href="#Classes">Classes</a>
  &#8226;   <a href="#random">random</a>
@@ -403,6 +425,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#Animacoes.jumpscare">Animacoes.jumpscare</a>
+ &#8226;   <a href="#Animacoes.running_skele">Animacoes.running_skele</a>
  &#8226;   <a href="#Animacoes.terminalAnimation">Animacoes.terminalAnimation</a>
 
   </div>
@@ -430,8 +453,26 @@ imported by:
   <a target="code" href="-" type="text/plain"><tt>Sons</tt></a>
 <span class="moduletype">NamespacePackage</span>  <div class="import">
 imported by:
-    <a href="#Sons.run">Sons.run</a>
+    <a href="#Sons.after_run">Sons.after_run</a>
+ &#8226;   <a href="#Sons.run">Sons.run</a>
  &#8226;   <a href="#Sons.scream">Sons.scream</a>
+
+  </div>
+
+</div>
+
+<div class="node">
+  <a name="Sons.after_run"></a>
+  <a target="code" href="///D:/JogoTrem/Sons/after_run.py" type="text/plain"><tt>Sons.after_run</tt></a>
+<span class="moduletype">SourceModule</span>  <div class="import">
+imports:
+    <a href="#Sons">Sons</a>
+ &#8226;   <a href="#vlc">vlc</a>
+
+  </div>
+  <div class="import">
+imported by:
+    <a href="#Animacoes.running_skele">Animacoes.running_skele</a>
 
   </div>
 
@@ -7178,7 +7219,6 @@ imported by:
  &#8226;   <a href="#linecache">linecache</a>
  &#8226;   <a href="#locale">locale</a>
  &#8226;   <a href="#logging">logging</a>
- &#8226;   <a href="#main.py">main.py</a>
  &#8226;   <a href="#ntpath">ntpath</a>
  &#8226;   <a href="#os">os</a>
  &#8226;   <a href="#pathlib">pathlib</a>
@@ -7343,6 +7383,7 @@ imports:
   <div class="import">
 imported by:
     <a href="#Animacoes.jumpscare">Animacoes.jumpscare</a>
+ &#8226;   <a href="#Animacoes.running_skele">Animacoes.running_skele</a>
  &#8226;   <a href="#Animacoes.terminalAnimation">Animacoes.terminalAnimation</a>
  &#8226;   <a href="#_datetime">_datetime</a>
  &#8226;   <a href="#_pydatetime">_pydatetime</a>
@@ -7615,7 +7656,8 @@ imports:
   </div>
   <div class="import">
 imported by:
-    <a href="#Sons.run">Sons.run</a>
+    <a href="#Sons.after_run">Sons.after_run</a>
+ &#8226;   <a href="#Sons.run">Sons.run</a>
  &#8226;   <a href="#Sons.scream">Sons.scream</a>
 
   </div>
