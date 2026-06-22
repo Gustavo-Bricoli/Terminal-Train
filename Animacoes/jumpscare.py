@@ -1,5 +1,5 @@
 from time import sleep
-import Sons.run, Sons.scream
+import Sons.Run, Sons.Scream
 from Sistemas.terminalCleaner import clean
 from utils import resource_path
 
