@@ -1,8 +1,17 @@
-nivel de importancia (alto para baixo): !, &, *
+Nível de importância (alto para baixo): !, &, *
 
-mecanica pro jogo!
-repensar animacaoTerminal! (aplicar na main)
-incluir algo com o ollama para testar! -> sendo feito em Sistemas/bgGeneratorNPC.py
-fazer outro trem!
-musica de fundo*
-cutscene com o trem muito bonito*
+!:
+mecânica pro jogo
+repensar animacaoTerminal (aplicar na main)
+incluir algo com o ollama para testar -> sendo feito em Sistemas/bgGeneratorNPC.py
+testar modelos diferentes
+testar agente validador de textos gerados para os NPC (typos e alucinações)
+pensar sobre tratativas de gênero/sexualidade na geração NPC
+
+    &:
+    Feedback visual de desembarque -> :)
+    fazer outro trem (?)
+
+        *:
+        música de fundo
+        cutscene com o trem muito bonito -> [ideia: Blender(png) -> ASCII -> EzGif]
